@@ -1,0 +1,415 @@
+.total_container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.header_container {
+    display: flex;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px;
+    height: 60px;
+}
+
+.header_wrap {
+    cursor:pointer;
+    font-size: 14px;
+    font-family: Apple SD Gothic Neo, arial, sans-serif;
+    color: #1f1f1f;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+  }
+.header_wrap:first-of-type{
+    margin-left: 15px;
+}
+.header_wrap:hover{
+    text-decoration: underline;
+}
+
+.profile_container {
+    display: inline-block;
+    flex-grow: 1;
+
+}
+.profile_wrapper{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.profile_semi_wrapper {
+    display:block;
+    min-width: auto;
+    font: 13px / 27px Roboto, Arial, sans-serif;
+    z-index: 986;
+    height:48px;
+    position: relative;
+    /*padding-left: 32px;*/
+    /*line-height: normal;*/
+    /*justify-content: flex-end;*/
+    /*vertical-align: middle;*/
+}
+.profile_box {
+    display: flex;
+    float: right;
+    align-items: center;
+    /*padding-left: 32px;*/
+    vertical-align: middle;
+    line-height: normal;
+    padding: 0 4px 0 32px;
+}
+
+
+.profile_detail {
+    display: block;
+    font-family: arial, sans-serif;
+    /*line-height: normal;*/
+    padding-right: 15px;
+}
+
+.profile {
+    display: inline-block;
+    padding-left: 15px;
+    line-height: 24px;
+    vertical-align: middle;
+}
+.profile_text {
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, .87);
+    text-decoration: none;
+    font-family: arial, sans-serif;
+    cursor:pointer;
+}
+
+.profile_text:hover{
+    text-decoration: underline;
+}
+
+.image_box {
+    /*display: block;*/
+    position : relative;
+    float: right;
+    display: block;
+    unicode-bidi: isolate;
+    line-height: normal;
+}
+.image_detail_box{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    padding:4px;
+}
+.image_detail_box:first-child{
+    padding-left: 4px;
+}
+
+.image{
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 1;
+    color: #d2d2d2;
+    padding: 8px;
+    display: inline-block;
+    outline: none;
+    vertical-align: middle;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+}
+
+.image_after{
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 1;
+    color: #d2d2d2;
+    padding: 4px;
+    display: inline-block;
+    outline: none;
+    vertical-align: middle;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+}
+
+.image_profile{
+    cursor: pointer;
+    text-decoration: none;
+    background-size: 32px 32px;
+    border: 0;
+    border-radius: 50%;
+    display: block;
+    margin: 0px;
+    position: relative;
+    height: 32px;
+    width: 32px;
+    z-index: 0;
+}
+
+.content_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 92px;
+    height: calc(100% - 560px);
+    max-height: 290px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.content_wrapper {
+    height: 100%;
+    margin-top: 180px;
+    max-height: 92px;
+    position: relative;
+}
+.logo_box {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: 272px;
+    height: 92px;
+}
+
+.search_container {
+    padding: 20px;
+    max-height: 160px;
+    display: block;
+    font-size: 14px;
+    font-family: Apple SD Gothic Neo, arial, sans-serif;
+    color: black;
+}
+
+
+.search_wrapper {
+    margin: 0 auto;
+    width: auto;
+    max-width: 584px;
+    padding-top: 6px;
+    position: relative;
+}
+
+.search_box {
+    display: flex;
+    z-index: 3;
+    position: relative;
+    min-height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 638px;
+    max-width: 584px;
+}
+.search_box:hover{
+        background: #fff;
+        box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+        border-color: transparent;
+}
+
+.search_box_main{
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 14px;
+}
+
+.search_icon{
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+    height: 46px;
+}
+
+.icon_box_search{
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+    color: #9aa0a6;
+    display: inline-block;
+    fill: currentColor;
+    position: relative;
+}
+
+.text_box{
+    display: flex;
+    width: 403px;
+}
+
+.text_field{
+    font-family: Apple SD Gothic Neo, arial, sans-serif;
+    /*line-height: 22px;*/
+    overflow-x: hidden;
+    resize: none;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, .87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    font-size: 16px;
+    width:403px;
+}
+
+.icon_box_follow{
+    display: flex;
+    flex: 0 0 auto;
+    margin-top: -5px;
+    align-items: stretch;
+    flex-direction: row;
+    height: 44px;
+}
+
+.keyboardIcon{
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 8px;
+    width: 24px;
+    /*line-height: 44px;*/
+}
+.default_icon{
+    background: url(https://www.gstatic.com/inputtools/images/tia.png) no-repeat center;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+
+.icon_box{
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+
+.invisible_image {
+    visibility: hidden;
+}
+
+.button_container {
+    display: block;
+    padding-top: 18px;
+    text-align: center;
+}
+
+.button_box_google {
+    /*box-shadow: 0 1px 1px rgba(0, 0, 0, .1);*/
+    appearance: auto;
+    box-sizing: border-box;
+    padding-block: 1px;
+    padding-inline: 6px;
+    background-color: #f8f9fa;
+    border: transparent;
+    color: #3c4043;
+    border-radius: 4px;
+    font-family: Apple SD Gothic Neo, arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    width: 110px;
+}
+.button_box_google:hover{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+.button_box_google:focus{
+    border: 1px solid #4285f4;
+    outline: none;
+}
+
+.button_box_second {
+    /*box-shadow: 0 1px 1px rgba(0, 0, 0, .1);*/
+    appearance: auto;
+    box-sizing: border-box;
+    padding-block: 1px;
+    padding-inline: 6px;
+    background-color: #f8f9fa;
+    border: transparent;
+    color: #3c4043;
+    border-radius: 4px;
+    font-family: Apple SD Gothic Neo, arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    width: 143px;
+}
+.button_box_second:hover{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+.button_box_second:focus{
+    border: 1px solid #4285f4;
+    outline: none;
+}
+
+.empty_container {
+    min-height: 294px;
+}
+
+.footer_container{
+    background-color: #f2f2f2;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    display: block;
+    unicode-bidi: isolate;
+}
+.footer_wrapper_top{
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #1f1f1f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: Apple SD Gothic Neo, arial, sans-serif;
+}
+.footer_wrapper_bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.footer_box_high {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer_box {
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Apple SD Gothic Neo, arial, sans-serif;
+    color: #1f1f1f;
+}
+.footer_box:hover {
+    text-decoration: underline;
+}
